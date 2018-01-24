@@ -201,7 +201,11 @@ public class PictrueActivity extends AppCompatActivity implements View.OnClickLi
         PhotoPickerIntent intent = new PhotoPickerIntent(PictrueActivity.this);
         intent.setSelectModel(SelectModel.MULTI);
         intent.setShowCarema(true); // 是否显示拍照
-        intent.setMaxTotal(6 - imagePaths.size() + 1); // 最多选择照片数量，默认为6
+        if(imagePaths.size()==0){
+            intent.setMaxTotal(6 - imagePaths.size()); // 最多选择照片数量，默认为6
+        }else{
+            intent.setMaxTotal(7 - imagePaths.size()); // 最多选择照片数量，默认为6
+        }
         intent.setSelectedPaths(imagePaths); // 已选中的照片地址， 用于回显选中状态
         startActivityForResult(intent, REQUEST_CAMERA_CODE);
 
