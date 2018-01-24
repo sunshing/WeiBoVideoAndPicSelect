@@ -1,0 +1,39 @@
+<resources>
+
+   <!-- <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>-->
+
+    <style name="AppTheme" parent="AppBaseSherlockTheme"></style>
+
+    <!-- 主题样式  Theme.Sherlock.Light.DarkActionBar -->
+    <style name="AppBaseSherlockTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:homeAsUpIndicator">@drawable/jar_actionbar_home_up</item>
+        <item name="homeAsUpIndicator">@drawable/jar_actionbar_home_up</item>
+        <item name="android:windowBackground">@drawable/com_theme_bg_app</item>
+        <item name="actionMenuTextColor">#ffffffff</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+    </style>
+
+    <style name="ActionMenuTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/action_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="actionBarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+    <style name="PhotoPickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/photopicker_background</item><!--设置显示图片的背景-->
+        <item name="actionMenuTextAppearance">@style/ActionMenuTextStyle</item>
+    </style>
+
+</resources>

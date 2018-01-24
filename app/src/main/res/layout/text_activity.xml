@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发图片"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_context"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="输入要发布的内容"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="25px"
+        android:background="@color/colorGray"></View>
+
+    <TextView
+        android:id="@+id/find_comment_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_red_roval_sign"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white" />
+</LinearLayout>

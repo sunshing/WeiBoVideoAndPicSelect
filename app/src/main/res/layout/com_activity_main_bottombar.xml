@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="#9B9B9B" />
+
+    <LinearLayout
+        android:id="@+id/radioGroupTab"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/com_bottombar_r1_press" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="动态"
+                android:textColor="@color/colorGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/com_bottombar_r2_unpress" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="空间"
+                android:textColor="@color/colorDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llf"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:background="#FF6D3C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivf"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/add_icon"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="发布"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/com_bottombar_r3_unpress" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="评价"
+                android:textColor="@color/colorDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/com_bottombar_r4_unpress" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的"
+                android:textColor="@color/colorDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

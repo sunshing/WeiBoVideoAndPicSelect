@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/com_bottombar_r1_press"></item>
+    
+    <!-- 选中正常 -->
+    <item android:state_checked="true" android:drawable="@drawable/com_bottombar_r1_press"></item>
+
+    <!-- 普通按下 -->
+    <item android:state_pressed="true" android:drawable="@drawable/com_bottombar_r1_press"></item>
+    <item android:drawable="@drawable/com_bottombar_r1_unpress"></item>
+</selector>
